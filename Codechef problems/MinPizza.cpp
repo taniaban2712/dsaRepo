@@ -1,3 +1,8 @@
+/*Each pizza consists of 444 slices. There are NNN friends and each friend needs exactly XXX slices.
+
+Find the minimum number of pizzas they should order to satisfy their appetite. */
+
+
 #include <iostream>
 using namespace std;
 

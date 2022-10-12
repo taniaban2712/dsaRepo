@@ -4,6 +4,9 @@ using namespace std;
 
 int main() {
     // Complete the code.
+    /*
+    The program states that when the number is from 1 to 9 print the number in words. 
+    When the number is greater than 10, then determine its even or odd and print message accordingly. */
     int a=0;
     int b=0;
     cin>>a;

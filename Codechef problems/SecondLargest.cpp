@@ -9,7 +9,7 @@ int main() {
 	cin>>T;
 	for(int i=1;i<=T;i++){
         cin>>A>>B>>C;
-	    if(A>B){
+	    if(A>B && A>C){
 	        if(B>C){
 	            cout<<B<<endl;;
 	        }
@@ -17,7 +17,7 @@ int main() {
 	            cout<<C<<endl;
 	        }
 	    }
-	    else{
+	    else if(B>C && B>A){
 	        if(A>C){
 	            cout<<A<<endl;
 	        }
@@ -25,5 +25,13 @@ int main() {
 	            cout<<C<<endl;
 	        }
 	    }
+		else{
+			if(A>B){
+				cout<<A<<endl;
+			}
+			else{
+				cout<<B<<endl;
+			}
+		}
 	}
 }

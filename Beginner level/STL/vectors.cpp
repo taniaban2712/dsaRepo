@@ -16,7 +16,26 @@ int main(){
 
     v1.clear();//clears all elements.
 
-    vector<int>vec(4,0);//--->this results in {0,0,0,0}
+    vector<int>vec1(4,0);//--->this results in {0,0,0,0}
+    vector<int>vec2(4,10);//--->this results in {10,10,10,10}
+
+    //if we wanna create a vec3, and create it as a copy of vec2
+
+    vector<int>vec3(vec2.begin(),vec2.end());//this creates a copy
+    //ALTERNATIVE
+    vector<int>vec4(vec2);
+
+    //defining a 2D vector
+
+    vector<vector<int>>vec;
+    vector<vector<int>>vec(10,vector<int>vec(20,0));//this defines 20 vectors with 0 within 10 vectors
+
+    //for defining a 3D Vector
+
+    vector<vector<vector<int>vec(10,vector<vector<int>>vec(20,vector<int>vec(30,0)));
+
+
+
 
     
 

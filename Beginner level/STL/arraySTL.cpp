@@ -29,6 +29,8 @@ int main(){
     for(auto it=arr.end()-1;it>=arr.begin();it--){
         cout<<*it<<" ";
     }
+
+    
     for(auto it:arr){//here "it" is the element in the array itself. 
         cout<<it<<" ";
     }//here the iterator it takes up the datatype int, as there is auto, automatically takes up the value.

@@ -32,7 +32,7 @@ int main(){
 
     //for defining a 3D Vector
 
-    vector<vector<vector<int>vec(10,vector<vector<int>>vec(20,vector<int>vec(30,0)));
+    vector<vector<vector<int>v(10,vector<vector<int>>v(20,vector<int>v(30,0)));
 
 
 

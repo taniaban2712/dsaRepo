@@ -6,6 +6,7 @@ int main(){
     cin>>t;
     while(t--){
         int n{0},x{0},c{0}, sum{0},a{0};
+        cin>>n>>x>>c;
         int arr[n];
         for(int i=0;i<n;i++){
             cin>>arr[i];

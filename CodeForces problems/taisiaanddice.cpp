@@ -7,19 +7,15 @@ int main(){
         int n{0},s{0},r{0};
         cin>>n>>s>>r;
         int maxno=s-r;
-        vector<int>v;
-        cout<<maxno<<" ";
-        while(r>0&&n>1){
-            if(r>maxno-1){
-                r-=maxno;
-                v.push_back(maxno-1);
-            }
-            else{
-                v.push_back(r);
-                r=0;
-            }
+        int a[n];
+        for(int i=0;i<(n-1);i++){
+            a[i]=r/(n-1);
         }
-        for(auto it:v){
+        for(int i=0;i<r%(n-1);i++){
+            a[i]++;
+        }
+        a[n-1]=maxno;
+        for(auto it:a){
             cout<<it<<" ";
         }
         cout<<" "<<endl;

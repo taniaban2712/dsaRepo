@@ -7,16 +7,10 @@ int main(){
     while(n--){
         string s="";
         cin>>s;
-        map<string,int>m;
-        if(s.size()%2==0){
-            cout<<"NO"<<endl;
-            return 0;
-        }
-        for(int i=1;i<s.length();i++){
-            string str=s.substr(0,i);
-            for(int j=0;j<str.length();j++){
-                
-            }
+        if(s.size()%2==1) cout<<"NO"<<'\n';
+        else{
+            if(s.substr(0,s.size()/2)==s.substr(s.size()/2,s.size()-1)) cout<<"YES"<<'\n';
+            else cout<<"NO"<<'\n';
         }
     }
 }

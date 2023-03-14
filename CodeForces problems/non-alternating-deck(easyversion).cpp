@@ -14,10 +14,11 @@ int main(){
         while(n>0){
             i++;
             if(f<2) bob+=min(n,i);
-            if(f>=2&&f<5) alice+=min(n,i);
-            if(f==4) f=0;
+            if(f>=2&&f<4) alice+=min(n,i);
+            if(f==3) f=0;
             else f++;
             n-=i;
+            //cout<<n<<" "<<alice<<" "<<bob<<endl;
             
         }
         cout<<alice<<" "<<bob<<endl;
